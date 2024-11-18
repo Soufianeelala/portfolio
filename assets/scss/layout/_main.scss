@@ -1,0 +1,512 @@
+@use"../abstract/variable" as cl;
+@use"../abstract/variable" as ft;
+@use"../abstract/mixins" as mx;
+
+main {
+    background-color: cl.$primary-bg-color;
+        color: cl.$primary-bg-color; // Texte sombre pour le contraste
+        height: 1100px;
+    
+        // <!--/////////////////////////// SOUFIANE -->
+    .contenair_1 {
+        background-image: url("../img/software-developer-6521720_1280.jpg");
+        background-size: cover; 
+        background-position: center;
+        display: flex;
+        font-family: ft.$fontR_B;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        height: 400px; 
+        margin: 0 auto;
+        h1{
+            font-size: xx-large;
+            color:cl.$particle-color;
+            font-family: ft.$fontM_EB; 
+            display: flex;
+            justify-content:center; 
+            align-items:flex-end;
+        
+           
+        }
+        h3{
+            color:cl.$particle-color ;
+        }
+    }
+    // <!--/////////////////////////// A propos de Moi -->
+
+    .apropos{
+        width: 100%;
+        color:cl.$primary-bg-color;
+        margin: auto;
+        margin-top: 3rem;
+        border-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 250px; 
+        position: relative;
+        h2{
+            
+            background-color:cl.$primary-bg-color;
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            transform: translateX(-50%);  
+            padding: 5px 20px;
+            border-radius: 10px;
+            color: cl.$particle-color;
+            font-family:ft.$fontM_EB;
+               
+        }
+        .background_blanc{
+            background-color:cl.$particle-color;
+            height: 200px;           
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            width: 70%;
+           
+            .qui_je_suis{
+                display: flex;               
+                justify-content: center; 
+                align-items :center;
+                width: 80% ;  
+                margin: auto;            
+                img{       
+                width: 190px;
+                height: 190px;
+                }
+                h3{
+                    font-family: ft.$fontR_R;
+                     width: 50%;
+                     
+                }
+                p{
+                    padding-left: 00px;
+                    font-family: ft.$fontR_R;
+                    width: 70%;
+                    margin: auto;
+                }
+                a{
+                    display: inline-block;
+                    background-color:cl.$primary-bg-color; /* Bleu foncé */
+                    color: cl.$particle-color;
+                    font-family: ft.$fontR_B;
+                    padding: 10px 20px;
+                    border-radius: 50%; /* Cercle */
+                    text-align: center;
+                    text-decoration: none;
+                    font-size: 1rem;
+                    width: 100px;
+                    height: 100px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                    transition: all 0.3s ease-in-out;
+                    }
+
+                    a:hover {
+                        background-color: cl.$accentue-color; /* Bleu plus clair */
+                        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+                        transform: scale(1.3); /* Agrandissement au survol */
+                }
+                
+       
+            }
+       
+        }
+       
+       
+    }
+    // <!--/////////////////////////// Mes compétences -->
+
+    .mes_compétences{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 50px;
+        position: relative;
+        margin-top: 2rem;
+       
+        h2{
+            
+            font-size: 1.5rem;
+            font-family:ft.$fontM_EB;   
+            background-color:cl.$primary-bg-color;
+            width: 30%;
+            margin: auto;
+            color:cl.$particle-color;
+            text-align: center;
+            background-color:cl.$primary-bg-color;
+            position: absolute;
+            top: -10%;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 5px 20px;
+            border-radius: 10px;
+            color: white;
+              
+        }
+        .background_mes_compétences{
+            background-color:cl.$particle-color;
+            height: 200px;
+            color:cl.$primary-bg-color;
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            p{
+                font-family: ft.$fontR_R;
+                width: 40%;
+                margin: auto;
+                text-align: center;
+                padding-top:20px ;
+            }
+            
+            
+           
+
+        }
+        .logo_mes_compétences{
+            display: flex;
+            justify-content:space-evenly ;
+            div{
+                border-radius: 50px;
+                width: 80px;
+                height:80px ;
+                background-color: cl.$primary-bg-color;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 0.5rem;
+               
+                img{
+                    width: 40px;
+                    height: 40px;
+                    text-align: center;
+                }
+            }
+        }
+
+    }  
+    // formartion//////////////////////////////
+        /* Timeline circle //////////////////*/
+    .formation-container {
+        position: relative;
+        width: 25%;
+        background-color:cl.$particle-color; 
+        border-radius: 50%; /* Semi-circle effect */
+        padding: 50px;
+        margin: auto;
+    }
+
+    /* titre */
+    .titre-formation {
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color:cl.$primary-bg-color;
+        padding: 10px 20px;
+        color:cl.$particle-color;
+        font-family:ft.$fontM_EB;   
+        border-radius: 20px;
+    }
+
+    /* Timeline Content */
+    .timeline-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    /* Timeline Diviseur */
+    .timeline-divider {
+        width: 5px;
+        height: 155%;
+        background-color:cl.$primary-bg-color;
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* Timeline Sections */
+    .timeline-left, .timeline-right {
+        width: 45%;
+    }
+
+    .timeline-item {
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+        gap: 10px;
+    }
+
+    /* Icon Styles */
+    .icon-container {
+        width: 180px;
+        height: 90px;
+        background-color:cl.$primary-bg-color;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon-container img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Text Styles */
+    .timeline-left p, .timeline-right p {
+        font-size: 0.79rem;
+        color:cl.$primary-bg-color;
+        line-height: 1.5;
+        text-align: center;
+        font-family: ft.$fontR_B;
+
+    }
+
+    /* Ligne  doré*/
+    .timeline-item::before {
+        content: '';
+        width: 50px;
+        height: 4px;
+        background-color:cl.$accentue-color;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    // <!--/////////////////////////// PORTFOLIO -->
+
+    .portfolio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+                
+        .titre_portfolio{
+                    display: flex;
+                    justify-content: center;
+                    margin: 3rem;
+                    h2{
+                        margin-left: 3rem;
+                        margin-right: 3rem;
+                        color:cl.$particle-color;
+                        font-family:ft.$fontM_EB;   
+
+                        
+                    }
+
+                    #line1 {
+                        border: none; 
+                        height: 3px; 
+                        background-color: cl.$particle-color; 
+                        width: 155px;
+                        margin: 20px auto;
+                    }
+                    #line2{
+                            border: none; 
+                            height: 3px; 
+                            background-color: cl.$particle-color;
+                            width: 155px; 
+                            margin: 20px auto; 
+                    }
+        }
+        ///////////////////////////image ___ PORTFOLIO -->
+        .portfolio_img{
+           
+            img{
+                width: 330px;
+                height: 390px;
+                border-radius: 5%;
+                margin-top: 20px; 
+                margin-bottom: 20px;
+                object-fit: cover;
+                object-position: center;
+                
+            }
+            .lecadre_doré1{ 
+                display: flex;
+                flex-direction: column;
+                align-items: center;      
+                background-color:cl.$accentue-color;
+                width:390px;
+                height: 500px;
+                border-radius: 5%;
+                
+                
+            }   
+            .portfolio_img1_img2{ 
+                display: flex;
+                justify-content: center;
+                grid-column: 500px;
+                gap: 70px;
+                color: cl.$primary-bg-color; 
+            }
+            .portfolio_img3_img4{ 
+                display: flex;
+                justify-content: center;
+                grid-column: 500px;
+                gap: 70px;
+                color: cl.$primary-bg-color;
+                margin-top: 50px;
+            }
+            .portfolio_img5_img6{ 
+                display: flex;
+                justify-content: center;
+                grid-column: 500px;
+                gap: 70px;
+                color: cl.$primary-bg-color;
+                margin-top: 50px;
+            }    
+        }
+    }
+    // <!-- FORMULAIRE/////////////// -->
+
+
+    .formulaire{
+        margin: 0;
+        padding: 0;
+        font-family:ft.$fontR_B;
+        background-color:cl.$primary-bg-color;
+        color:cl.$particle-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        position: relative;
+    }
+    
+    /* Conteneur principal */
+    .contact-container {
+        background-color:cl.$particle-color;
+        width: 90%;
+        max-width: 600px;
+        padding: 20px;
+        border-radius: 15px;
+        position: relative;
+        color:cl.$primary-bg-color; 
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    /* Titre du formulaire */
+    .form-header {
+        position: absolute;
+        top: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color:cl.$primary-bg-color;
+        padding: 5px 20px;
+        border-radius: 10px;
+        color:cl.$particle-color;
+        font-family: ft.$fontM_EB;
+    }
+    
+    /* Styles du formulaire */
+    .contact-form {
+        margin-top: 2rem;
+    }
+    
+    .form-group {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .form-group label {
+        margin-bottom: 5px;
+        font-size: 0.9rem;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+        outline: none;
+    }
+    
+    .form-group input:focus,
+    .form-group textarea:focus {
+        border-color:cl.$primary-bg-color;
+    }
+    
+    /* Champ texte */
+    textarea {
+        height: 80px;
+        resize: none;
+    }
+    
+    /* Bouton envoyer */
+    .submit-btn {
+        background-color: cl.$primary-bg-color;
+        color: cl.$particle-color;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .submit-btn:hover {
+        background-color: cl.$accentue-color;
+    }
+    // fooooootttttter///////////////////////////
+     .footer {
+            background-color:cl.$accentue-color;
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            color: cl.$primary-bg-color; /* Texte bleu foncé */
+            font-family:ft.$fontR_R;
+            
+      
+            
+            .footer-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            
+            .linkedin-icon {
+                background-color: cl.$primary-bg-color;
+                color:cl.$particle-color;
+                font-weight: bold;
+                padding: 10px 15px;
+                border-radius: 50%;
+                font-size: 1.2rem;
+                text-align: center;
+            }
+            .linkedin-icon:hover {
+                background-color: cl.$particle-color;
+            }
+            
+            .footer p {
+                margin: 0;
+                font-size: 0.9rem;
+                
+            }
+            span{
+                font-size: 1.5rem;
+                font-family:ft.$fontR_B;
+            }  
+     } 
+
+}

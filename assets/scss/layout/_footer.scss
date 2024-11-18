@@ -1,0 +1,36 @@
+@use"../abstract/variable" as cl;
+@use"../abstract/variable" as ft;
+@use"../abstract/mixins" as mx;
+// footer {
+//     background-color:cl.$accentue-color;
+//     width: 100%;
+//     text-align: center;
+//     padding: 10px 0;
+//     margin-top: 20px;
+//     color: cl.$primary-bg-color; /* Texte bleu foncé */
+    
+    
+// }
+
+// .footer-content {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     gap: 10px;
+// }
+
+// .linkedin-icon {
+//     background-color: cl.$primary-bg-color;
+//     color:cl.$particle-color;
+//     font-weight: bold;
+//     padding: 10px 15px;
+//     border-radius: 50%;
+//     font-size: 1.2rem;
+//     text-align: center;
+// }
+
+// .footer p {
+//     margin: 0;
+//     font-size: 0.9rem;
+    
+// }

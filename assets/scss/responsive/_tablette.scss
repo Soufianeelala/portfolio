@@ -1,0 +1,124 @@
+@use"../abstract/variable" as cl;
+@use"../abstract/variable" as ft;
+@use"../abstract/mixins" as mx;
+// Responsive tablette____________
+
+
+
+
+@media screen and (max-width: 1116px) {
+    main{
+        // parti mes_compétences//////////
+        .mes_compétences{
+            .background_mes_compétences{
+                height: 300px;
+            
+            }
+        }
+    }
+}
+@media screen and (max-width: 1000px) {
+    
+    header{ 
+       
+    //  la bare de menu -------------------  
+        .menu{
+            display: flex;
+                flex-wrap:wrap ;
+            nav{
+                display: flex;
+                flex-wrap:wrap ; 
+                height: 190px;             
+                }
+
+                ul{
+                    display: flex;
+                    flex-wrap:wrap ;
+                    justify-content: center;
+                   
+                }
+                li {
+                    padding: 2px;
+                }
+            }
+        }
+    
+    //   responsive_________ main ////////////
+    main{
+        .apropos{
+            margin-bottom: 100px;
+            height:50%;
+
+           h2{
+            margin-bottom: 10px;
+           }
+           
+            .background_blanc{               
+                display: flex;
+                flex-direction: column;
+                height: 100%;         
+                .qui_je_suis{
+                    display: flex; 
+                    flex-direction: column;
+                    img{       
+                       margin-top: 20px;
+                    }
+                   
+                }
+            }
+        }
+    // <!--/////////////////////////// Mes compétences -->
+        .mes_compétences{
+            .background_mes_compétences{
+                 height: 300px;
+               
+            }
+            .logo_mes_compétences{
+                display: flex;
+                flex-direction: row;
+                align-items: center;  
+            } 
+        }         
+    }    
+}
+
+@media screen and (max-width: 870px) {
+     // <!--/////////////////////////// Mes compétences -->
+     main{    
+        .mes_compétences{
+            h2{
+            width: 60%;
+            }
+        }
+
+    // <!--//////////// PORTFOLIO__ -->
+    
+        .portfolio{
+            display: flex;
+            flex-direction: column;
+            align-items: center;  
+        ///////////////////////////image ___ PORTFOLIO -->
+            .portfolio_img{             
+                  .portfolio_img1_img2{ 
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    
+                }
+                .portfolio_img3_img4{ 
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    
+                }
+                .portfolio_img5_img6{ 
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                
+                }    
+            }
+        }
+    }
+
+}

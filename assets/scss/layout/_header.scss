@@ -1,0 +1,54 @@
+@use"../abstract/variable" as cl;
+@use"../abstract/variable" as ft;
+@use"../abstract/mixins" as mx;
+
+
+header{ 
+  
+//  la bare de menu -------------------  
+.menu {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+   
+    nav{
+        
+        background-color:cl.$accentue-color;
+        width: 60%;
+        margin: auto;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 50px;
+        img{
+            width: 60px;
+            
+        }
+        ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        }
+    
+        li {
+        margin: 0 20px;
+    
+        a {
+            text-decoration: none;
+            color:cl.$primary-bg-color;
+            font-weight: bold;
+            font-size: 18px;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+    
+            &:hover {
+                color:cl.$particle-color;
+            }
+        }
+        }
+    }
+  }
+}

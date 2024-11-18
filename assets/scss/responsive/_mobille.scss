@@ -1,0 +1,44 @@
+@use"../abstract/variable" as cl;
+@use"../abstract/variable" as ft;
+@use"../abstract/mixins" as mx;
+// Responsive mobile_______________
+
+@media screen and (max-width: 591px) {
+    // <!--/////////////////////////// Mes compétences -->
+    main{    
+        .mes_compétences{
+            h2{
+            width: 60%;
+            }
+            .background_mes_compétences{
+                height: 350px;
+                p{
+                padding-top: 50px;
+                width: 50%;
+                }
+            }
+            .logo_mes_compétences{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+           }   
+        }
+// <!--/////////////////////////// PORTFOLIO -->
+
+    .portfolio{     
+        .titre_portfolio{
+                    #line1 {
+                        width: 70px;
+                       
+                    }
+                    #line2{
+                        width: 70px; 
+                            
+                    }
+        } }
+    }
+    
+
+
+
+}

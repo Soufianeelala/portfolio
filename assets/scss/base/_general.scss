@@ -1,0 +1,15 @@
+@use"../abstract/variable" as cl;
+
+
+// body{
+//    background-color:cl.$premiere-couleur;
+// }
+// Ajoutez ici d'autres styles globaux
+
+body, html {
+  
+   height: 100%;
+   background-color:  #041535;
+   
+ }
+ 
